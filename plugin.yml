@@ -1,0 +1,19 @@
+name: LetMeDespawn
+version: 1.26.10.3
+main: letmedespawn
+api-version: '1.21'
+author: frikinjay
+description: 'Tweaks mob despawn rules to prevent accidental persistent mobs to increase performance.'
+website: https://modrinth.com/mod/lmd
+
+commands:
+  letmedespawn:
+    description: Manage LetMeDespawn's despawn rules
+    usage: /<command> <add|remove|addPersistenceEnabler|removePersistenceEnabler|standardSpawnerDespawn|trialSpawnerDespawn|reload|info>
+    aliases: [lmd]
+    permission: letmedespawn.admin
+
+permissions:
+  letmedespawn.admin:
+    description: Use /letmedespawn
+    default: op

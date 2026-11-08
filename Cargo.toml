@@ -1,0 +1,21 @@
+[package]
+name = "letmedespawn"
+version = "1.26.10-3"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# Standard path if placed inside the 'rustpaper/plugins/' folder:
+horizon-bukkit = { path = "../../sdk/horizon-bukkit" }
+
+# Alternative absolute path (uncomment if built as a standalone project outside rustpaper repo):
+# horizon-bukkit = { path = "C:\\Windows\\System32\\rustpaper\\sdk\\horizon-bukkit" }
+
+serde_json = "1"
+
+[profile.release]
+panic = "unwind"
+
+[workspace]

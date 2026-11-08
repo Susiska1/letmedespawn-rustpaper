@@ -1,0 +1,30 @@
+# LetMeDespawn
+# In vanilla, a mob that picks up an item (or is given one by a dispenser) becomes persistent and never despawns,
+# so worlds slowly fill up with zombies holding rotten flesh. LetMeDespawn keeps those mobs despawnable, drops the
+# items they picked up when they despawn, and lets spawner mobs and endermen carrying a block despawn too.
+#
+# Mobs a player named are never touched. Other plugins can exclude a mob by giving it the scoreboard tag
+# "letmedespawn.ignore" (/tag <mob> add letmedespawn.ignore).
+#
+# Every setting can also be changed in game with /letmedespawn (alias /lmd).
+
+# Mobs that still become persistent when they pick up an item, as before LetMeDespawn (entity ids, e.g. minecraft:zombie)
+mobNames:
+  - minecraft:example
+
+# Items that keep a mob from despawning while it holds or wears one it picked up (item ids, e.g. minecraft:diamond_sword)
+persistenceEnablers: []
+
+# Let mobs from monster spawners despawn even when something tries to make them persistent
+enableStandardSpawnerDespawn: true
+
+# Let mobs from trial spawners despawn once their spawner stops counting them
+enableTrialSpawnerDespawn: true
+
+advanced:
+  # How often, in ticks, the few mobs that need it are re-checked
+  check-interval-ticks: 20
+  # Despawn distances (blocks) for endermen carrying a block
+  enderman-despawn-range:
+    soft: 32
+    hard: 128
