@@ -116,27 +116,19 @@ By default, this plugin is configured to be compiled inside the \*\*rustpaper\*\
 
 
 
-\#### Build Steps
-
-1\. Navigate into your local plugin folder:
-
-&#x20;  ```bash
-
-&#x20;  cd rustpaper/plugins/letmedespawn
-
-&#x20;  ```
-
-2\. Compile the production release:
-
-&#x20;  ```bash
-
-&#x20;  cargo build --release
-
-&#x20;  ```
-
-3\. Find your compiled library file inside the `target/release/` directory (e.g., `letmedespawn.dll` on Windows or `libletmedespawn.so` on Linux).
-
-4\. Copy the file into your active server's `plugins/` folder.
+#### Build Steps
+1. Navigate to your `rustpaper/plugins/` directory and clone this repository:
+   ```bash
+   cd rustpaper/plugins
+   git clone https://github.com/Susiska1/letmedespawn-rustpaper.git
+   cd letmedespawn-rustpaper/letmedespawn
+   ```
+2. Compile the production release:
+   ```bash
+   cargo build --release
+   ```
+3. Find your compiled library file inside the `target/release/` directory (e.g., `letmedespawn.dll` on Windows or `libletmedespawn.so` on Linux).
+4. Copy the file into your active server's `plugins/` folder.
 
 
 
