@@ -148,7 +148,7 @@ By default, this plugin is configured to be compiled inside the \*\*rustpaper\*\
 
 
 
-\* Original Java plugin by \*\*frikinjay\*\* (\[Let Me Despawn on Modrinth](https://modrinth.com)).
+\* Original Java plugin by \*\*frikinjay\*\* [![Modrinth page](https://img.shields.io/badge/Modrinth%20page-8A2BE2)](https://modrinth.com/plugin/lmd/versions)
 
 \* This port is distributed under the \*\*MIT License\*\*, remaining completely free and open-source in compliance with the original project's terms.
 
