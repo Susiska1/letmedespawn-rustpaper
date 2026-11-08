@@ -2,7 +2,9 @@
 
 
 
-A high-performance Rust port of the popular Minecraft optimization plugin \[Let Me Despawn](https://modrinth.com) (originally by frikinjay), rewritten specifically for the \*\*RustPaper\*\* server platform using the RustPaper SDK.
+A high-performance Rust port of the popular Minecraft optimization plugin \[Let Me Despawn](https://modrinth.com/plugin/lmd/versions) (originally by frikinjay), rewritten specifically for the \*\*RustPaper\*\* server platform using the RustPaper SDK.
+[![Download RustPaper](https://shields.io)](https://github.com/SaphirePay/rustpaper)
+
 
 
 
